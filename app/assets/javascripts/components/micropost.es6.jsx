@@ -7,7 +7,11 @@ class Micropost extends React.Component {
   }
 
   _touchedMe() {
-    alert("Ouch");
+    //alert("Ouch");
+    
+    var newState = {};
+    newState["clicked"] = true;
+    this.setState(newState);
   }
 
   render () {
